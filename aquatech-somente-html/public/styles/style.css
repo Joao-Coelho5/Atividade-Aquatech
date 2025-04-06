@@ -1,38 +1,44 @@
 /* INICIO HEADER */
 
 
-body{
+body {
     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     margin: 0;
     padding: 0;
     font-family: 'Barlow', sans-serif;
     background-color: black;
 }
-:root{
+
+:root {
     --tamanho-header: 80px;
     --tamanho-footer: 90px;
-    --tamanho-banner:calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px)
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px)
 }
-.header{
+
+.header {
     height: var(--tamanho-header);
     border-bottom: 2px solid #32b9cd;
 }
-.container{
+
+.container {
     display: flex;
     width: 80%;
     margin: auto;
 }
-.titulo{
+
+.titulo {
     color: #32b9cd;
     width: fit-content;
     font-weight: 500;
 }
-.header .container{
+
+.header .container {
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
-.navbar{
+
+.navbar {
     width: 300px;
     display: flex;
     align-items: center;
@@ -40,6 +46,7 @@ body{
     list-style: none;
     color: #e3b062;
 }
+
 .header a {
     text-decoration: none;
     color: #e3b062;
@@ -62,7 +69,7 @@ body{
     background-size: cover;
 }
 
-.banner .container{
+.banner .container {
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -85,13 +92,14 @@ body{
 
 /*INICIO MISSÃO VISÃO VALORES*/
 
-.social{
+.social {
     background-color: #e5e5e5;
     display: flex;
     justify-content: center;
     text-align: center;
 }
-.social .container .boxes{
+
+.social .container .boxes {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -103,7 +111,8 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.box img{
+
+.box img {
     width: 170px;
 }
 
@@ -112,7 +121,7 @@ body{
 
 /* INICIO FOOTER */
 
-.footer{
+.footer {
     background-color: #32b9cd;
     height: var(--tamanho-footer);
     color: white;
@@ -120,11 +129,91 @@ body{
     font-size: 15px;
 }
 
-.footer .container{
+.footer .container {
     justify-content: center;
     text-align: center;
 }
 
-.version{
+.version {
     font-size: 10px;
+}
+
+
+/* FIM FOOTER */
+
+
+/* INICIO CONTAINER CADASTRO */
+
+.banner .container .card-cadastro {
+    height: 500px;
+    width: 660px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    color: palevioletred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.formulario .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-color: #32b9cd;
+    border-radius: 10px;
+    height: 30px;
+    width: 550px;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.botao {
+    background-color: rgb(228, 26, 93);
+    color: white;
+    height: 35px;
+    width: 120px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* FIM CADASTRO */
+
+
+
+/* INICIO LOGIN */
+
+
+.banner .container .card-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login{
+    height: 240px;
+    width: 630px;
+    background-color: #e5e5e5;
+    color: palevioletred;
+    border-radius: 10px;
+}
+
+.botao-login {
+    background-color: rgb(228, 26, 93);
+    color: white;
+    height: 35px;
+    width: 120px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
